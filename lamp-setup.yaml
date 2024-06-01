@@ -1,0 +1,17 @@
+---
+- name: Provision and setup Jenkins on EC2
+  hosts: all
+  remote_user: ubuntu
+  become: yes
+
+     
+
+- hosts: all
+  roles:
+    - role: geerlingguy.java  # Ansible Galaxy role for Java
+      vars:
+        java_packages:
+          - openjdk-11-jdk
+      become: yes
+    - role: geerlingguy.jenkins  # Ansible Galaxy role for Jenkins
+      become: yes 
