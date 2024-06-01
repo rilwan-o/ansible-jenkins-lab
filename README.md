@@ -19,6 +19,6 @@ This playbook is designed to automate the provisioning and setup of Jenkins on E
 
 
 How to run:
-1. copy your key-pair file to replace existing .pem in the project root directory
-2. replace the ip's in the inventory.ini file with your ec2 public ips
-3. your terminal, switch to the project directory and run "ansible-playbook lamp-setup.yaml" 
+1. Copy your key-pair file to replace existing .pem in the project root directory
+2. Replace the ip's in the inventory.ini file with your ec2 public ips
+3. On your terminal, switch to the project directory and run "ansible-playbook lamp-setup.yaml" 
