@@ -19,6 +19,12 @@ This playbook is designed to automate the provisioning and setup of Jenkins on E
 
 
 How to run:
-1. Copy your key-pair file to replace existing .pem in the project root directory
-2. Replace the ip's in the inventory.ini file with your ec2 public ips
-3. On your terminal, switch to the project directory and run "ansible-playbook lamp-setup.yaml" 
+Using Ansible Galaxy
+1.  Install Ansible Galaxy Roles:
+    Use ansible-galaxy install geerlingguy.java to install the Java role.
+    Use ansible-galaxy install geerlingguy.jenkins to install the Jenkins role.
+2.  Incorporate the Roles in Playbook:
+    Reference these roles in your playbook as shown in the lamp-setup.yaml file
+3. Copy your key-pair file to replace existing .pem in the project root directory
+4. Replace the ip's in the inventory.ini file with your ec2 public ips
+5. On your terminal, switch to the project directory and run "ansible-playbook lamp-setup.yaml" 
