@@ -16,3 +16,9 @@ become: yes: This ensures that the tasks within the geerlingguy.java role will b
 become: yes: This ensures that the tasks within the geerlingguy.jenkins role will be executed with elevated privileges.
 Summary
 This playbook is designed to automate the provisioning and setup of Jenkins on EC2 instances. It uses roles from Ansible Galaxy to install Java and Jenkins, ensuring all tasks are performed with the necessary privileges for successful installation and configuration.
+
+
+How to run:
+1. copy your key-pair file to replace existing .pem in the project root directory
+2. replace the ip's in the inventory.ini file with your ec2 public ips
+3. your terminal, switch to the project directory and run "ansible-playbook lamp-setup.yaml" 
